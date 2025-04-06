@@ -5,16 +5,15 @@
 
 body {
     font-family: "Rye", serif;
-    letter-spacing: 50;
-    background: #968787;
+    background: #d9bdbd;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 nav {
-    background: #640b0b;
-    color: white;
+    background: #7f1616;
+    color: rgb(0, 0, 0);
     padding: 30px;
     display: flex;
     align-items: center;
@@ -28,7 +27,7 @@ nav {
     transform: translateX(-50%);
     font-size: 28px;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 nav button {
@@ -38,7 +37,7 @@ nav button {
     top: 40px;
     border: none;
     cursor: grab;
-    background: #968787;
+    background: #a24141;
     color: white;
     border-radius: 35px;
 }
@@ -51,8 +50,10 @@ nav button {
     height: 600px;
     margin: 70px auto;
     padding: 10px;
-    background: rgb(135, 71, 71);
+    color: rgb(0, 0, 0);
+    background: #a24141;
     border-radius: 35px;
+
 }
 
 button {
@@ -62,6 +63,8 @@ button {
     border: none;
     border-radius: 35px;
 }
+
+
 audio {
     padding: auto;
 }
