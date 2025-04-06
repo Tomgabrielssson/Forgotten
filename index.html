@@ -36,14 +36,24 @@
 
     <input type="range" id="volume" min="0" max="100" value="50" oninput="adjustVolume(this.value)">
     <span id="volume-label">50%</span>
-    <div class="sound-buttons">
-        <button onclick="playSound(Audio)">Play Song</button>
-        <button onclick="toggleMute()">Mute/Unmute</button>
 
-    <p>Sound Effects</p>
+    <div class="sound-buttons">
+        <button onclick="toggleplay()">Play/Pause Music</button>
+        <button onclick="toggleMute()">Mute/Unmute</button>
     </div>
 
-    <audio id="audio-sample" loop src="/Users/tom/Desktop/House on the Hill - Everet Almond.mp3" preload="auto"></audio>
+    <audio id="audioSample" loop src="/Users/tom/Desktop/Forgottensoundtrack.mp3" preload="auto"></audio>
+
+    <p>Sound Effects</p>
+    <input type="range" id="sfx-volume" min="0" max="100" value="50" oninput="adjustSFXVolume(this.value)">
+    <span id="sfx-volume-label">50%</span>
+    <div class="sfx-buttons">
+        <button onclick="playSFX()">Play/Pause SFX</button>
+        <button onclick="toggleSFXMute()">Mute/Unmute SFX</button>
+    </div>
+    
+    <audio id="sfx-sample" src="/Users/tom/Desktop/rainsound.mp3" preload="auto"></audio>
+    
 </div>
 
 <script src="script.js"></script>
